@@ -10,14 +10,14 @@ return [
         'connection' => '',
 
         'tables' => [
-            'games' => 'leaguefy_games',
-            'teams' => 'leaguefy_teams',
-            'tournaments' => 'leaguefy_tournaments',
-            'tournaments_teams' => 'leaguefy_tournaments_teams',
-            'configs' => 'leaguefy_tournament_configs',
-            'stages' => 'leaguefy_stages',
-            'stage_parents' => 'leaguefy_stage_parents',
-            'matches' => 'leaguefy_matches',
+            'games' => 'ess_games',
+            'teams' => 'ess_teams',
+            'tournaments' => 'ess_tournaments',
+            'tournaments_teams' => 'ess_tournaments_teams',
+            'configs' => 'ess_tournament_configs',
+            'stages' => 'ess_stages',
+            'stage_parents' => 'ess_stage_parents',
+            'matches' => 'ess_matches',
         ],
     ],
 ];
