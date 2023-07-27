@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ece6abdc70d18538281eb16d70d6ea36",
+    "content-hash": "34b360d902b998d0da86988182b92021",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1079,16 +1079,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v10.16.0",
+            "version": "v10.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "7589f09fe0e8735615cf25f0f1807682aac124c1"
+                "reference": "5c93d2795c393b462481179ce42dedfb30cc19b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/7589f09fe0e8735615cf25f0f1807682aac124c1",
-                "reference": "7589f09fe0e8735615cf25f0f1807682aac124c1",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/5c93d2795c393b462481179ce42dedfb30cc19b5",
+                "reference": "5c93d2795c393b462481179ce42dedfb30cc19b5",
                 "shasum": ""
             },
             "require": {
@@ -1275,7 +1275,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-07-25T14:31:32+00:00"
+            "time": "2023-07-26T03:30:46+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -1865,22 +1865,22 @@
         },
         {
             "name": "leaguefy/leaguefy-admin",
-            "version": "v0.1.6",
+            "version": "v0.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrianoanschau/leaguefy-admin.git",
-                "reference": "93c3bbe381714222c46280ebd6d78fe06f8963c9"
+                "reference": "9e3a9ef9365a0696ccd28987de1e08bff63dff33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrianoanschau/leaguefy-admin/zipball/93c3bbe381714222c46280ebd6d78fe06f8963c9",
-                "reference": "93c3bbe381714222c46280ebd6d78fe06f8963c9",
+                "url": "https://api.github.com/repos/adrianoanschau/leaguefy-admin/zipball/9e3a9ef9365a0696ccd28987de1e08bff63dff33",
+                "reference": "9e3a9ef9365a0696ccd28987de1e08bff63dff33",
                 "shasum": ""
             },
             "require": {
                 "jeroennoten/laravel-adminlte": ">=3.9.1",
                 "laravel/framework": ">=7.0",
-                "leaguefy/leaguefy-manager": "^0.1.4",
+                "leaguefy/leaguefy-manager": "^0.1.5",
                 "php": ">=7.2.5"
             },
             "type": "library",
@@ -1911,22 +1911,22 @@
             "description": "Leaguefy Admin - E-Sports Manager.",
             "support": {
                 "issues": "https://github.com/adrianoanschau/leaguefy-admin/issues",
-                "source": "https://github.com/adrianoanschau/leaguefy-admin/tree/v0.1.6"
+                "source": "https://github.com/adrianoanschau/leaguefy-admin/tree/v0.1.12"
             },
-            "time": "2023-07-26T01:36:30+00:00"
+            "time": "2023-07-27T02:35:56+00:00"
         },
         {
             "name": "leaguefy/leaguefy-manager",
-            "version": "v0.1.4",
+            "version": "v0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrianoanschau/leaguefy-manager.git",
-                "reference": "95c93220fe09de21b2f32963ac458306d144db7a"
+                "reference": "5e364b438505b3e8af1d788d20b491a935124f1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrianoanschau/leaguefy-manager/zipball/95c93220fe09de21b2f32963ac458306d144db7a",
-                "reference": "95c93220fe09de21b2f32963ac458306d144db7a",
+                "url": "https://api.github.com/repos/adrianoanschau/leaguefy-manager/zipball/5e364b438505b3e8af1d788d20b491a935124f1a",
+                "reference": "5e364b438505b3e8af1d788d20b491a935124f1a",
                 "shasum": ""
             },
             "type": "library",
@@ -1957,9 +1957,9 @@
             "description": "Leaguefy Manager - E-Sports Manager.",
             "support": {
                 "issues": "https://github.com/adrianoanschau/leaguefy-manager/issues",
-                "source": "https://github.com/adrianoanschau/leaguefy-manager/tree/v0.1.4"
+                "source": "https://github.com/adrianoanschau/leaguefy-manager/tree/v0.1.5"
             },
-            "time": "2023-07-26T01:35:12+00:00"
+            "time": "2023-07-26T14:31:08+00:00"
         },
         {
             "name": "monolog/monolog",
