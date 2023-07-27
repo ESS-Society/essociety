@@ -10,7 +10,7 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
-        "leaguefy/leaguefy-admin": "^0.1.15"
+        "leaguefy/leaguefy-admin": "^0.1.16"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
