@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\AuthRegisterRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -9,35 +10,34 @@ use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
-    public function view()
-    {
-        return view('auth.register');
-    }
-
     /**
      * Register a newly user.
      *
      * @param Request $request
+     * @return User
      */
     public function register(AuthRegisterRequest $request)
     {
         try {
-            User::create([
+            $user = User::create([
                 'name' => $request->name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
             ]);
 
-            return redirect()->route('auth.login')->with('toastr', [
-                'type' => ['success'],
-                'message' => ['Registrado com sucesso!'],
-            ]);
+            return response()->json([
+                'status' => true,
+                'message' => 'User Created Successfully',
+                'data' => [
+                    'token' => $user->createToken("API TOKEN")->plainTextToken,
+                ],
+            ], 200);
 
         } catch (\Throwable $th) {
-            return redirect()->back()->with('toastr', collect([
-                'type' => ['error'],
-                'message' => [$th->getMessage()],
-            ]));
+            return response()->json([
+                'status' => false,
+                'message' => $th->getMessage(),
+            ], 500);
         }
     }
 }

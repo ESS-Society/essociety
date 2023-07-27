@@ -40,7 +40,7 @@ class Handler extends ExceptionHandler
             if ($request->is(config('leaguefy-admin.route.prefix').'/*')) {
                 $exception = new LeaguefyAdminException($th);
 
-                return redirect()->back()->with('toastr', collect([
+                session()->flash('toastr', collect([
                     'type' => ['error'],
                     'message' => [$exception->getMessage()],
                 ]));

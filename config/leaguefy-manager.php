@@ -3,7 +3,7 @@
 return [
     'route' => [
         'prefix' => env('LEAGUEFY_ROUTE_PREFIX', 'api/leaguefy/v1'),
-        'middleware' => [],
+        'middleware' => ['auth:sanctum'],
     ],
 
     'database' => [

@@ -2,10 +2,10 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Password;
+use Illuminate\Foundation\Http\FormRequest;
 
-class AuthRegisterRequest extends FormRequest
+class ResetPasswordRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,8 +23,8 @@ class AuthRegisterRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'required|string|min:3',
-            'email' => 'required|email|unique:users,email',
+            'token' => 'required',
+            'email' => 'required|email',
             'password' => [
                 'required',
                 'confirmed',
@@ -35,7 +35,6 @@ class AuthRegisterRequest extends FormRequest
                     ->symbols()
                     ->uncompromised()
             ],
-            'terms' => 'required|accepted',
         ];
     }
 }

@@ -167,12 +167,12 @@ return [
     |
     */
 
-    'classes_auth_card' => 'card-outline card-primary',
+    'classes_auth_card' => '',
     'classes_auth_header' => '',
     'classes_auth_body' => '',
     'classes_auth_footer' => '',
     'classes_auth_icon' => '',
-    'classes_auth_btn' => 'btn-flat btn-primary',
+    'classes_auth_btn' => 'btn-primary',
 
     /*
     |--------------------------------------------------------------------------
@@ -254,12 +254,12 @@ return [
 
     'use_route_url' => false,
     'dashboard_url' => 'home',
-    'logout_url' => 'logout',
-    'login_url' => 'login',
-    'register_url' => 'register',
-    'password_reset_url' => 'password/reset',
-    'password_email_url' => 'password/email',
-    'profile_url' => false,
+    'logout_url' => 'auth/logout',
+    'login_url' => 'auth/login',
+    'register_url' => 'auth/register',
+    'password_reset_url' => 'auth/password/reset',
+    'password_email_url' => 'auth/password/email',
+    'profile_url' => true,
 
     /*
     |--------------------------------------------------------------------------

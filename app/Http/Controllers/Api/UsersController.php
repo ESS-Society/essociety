@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use App\Models\User;
 
 class UsersController extends Controller
@@ -35,6 +36,20 @@ class UsersController extends Controller
             'data' => [
                 'user' => $user,
             ],
+        ], 200);
+    }
+
+    /**
+     * Display the specified user.
+     *
+     * @return User
+     */
+    public function destroy(User $user)
+    {
+        $user->delete();
+
+        return response()->json([
+            'status' => true,
         ], 200);
     }
 }
