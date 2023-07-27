@@ -16,8 +16,8 @@ use App\Http\Controllers;
 */
 
 $router->get('/', function () {
-    return view('welcome');
-})->middleware('auth:sanctum');
+    return redirect()->route('leaguefy.admin.index');
+})->middleware('auth');
 
 Route::group([
     'middleware' => ['guest'],
