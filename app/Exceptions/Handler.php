@@ -3,6 +3,9 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Http\Request;
+use Leaguefy\LeaguefyAdmin\Exceptions\LeaguefyAdminException;
+use Leaguefy\LeaguefyManager\Exceptions\LeaguefyManagerApiException;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -25,6 +28,23 @@ class Handler extends ExceptionHandler
     {
         $this->reportable(function (Throwable $e) {
             //
+        });
+
+        $this->renderable(function (Throwable $th, Request $request) {
+            if ($request->is(config('leaguefy-manager.route.prefix').'/*')) {
+                $exception = new LeaguefyManagerApiException($th);
+
+                return response()->json($exception->render(), $exception->getCode());
+            }
+
+            if ($request->is(config('leaguefy-admin.route.prefix').'/*')) {
+                $exception = new LeaguefyAdminException($th);
+
+                return redirect()->back()->with('toastr', collect([
+                    'type' => ['error'],
+                    'message' => [$exception->getMessage()],
+                ]));
+            }
         });
     }
 }
