@@ -17,7 +17,7 @@ use App\Http\Controllers;
 
 $router->get('/', function () {
     return redirect()->route('leaguefy.admin.index');
-})->middleware('auth');
+});
 
 Route::group([
     'middleware' => ['guest'],
