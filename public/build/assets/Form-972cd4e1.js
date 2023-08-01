@@ -1,0 +1,1 @@
+import{q as t,j as o}from"./app-f136ca8f.js";import{M as a}from"./Master-7d15f78f.js";import{F as e}from"./Form-c7b59712.js";import"./Card-db3b7093.js";function d(){const{props:r}=t();return o(a,{header:"Tournaments",children:o(e,{name:"tournament",fields:r.fields,id:r.id,data:r.data})})}export{d as default};
