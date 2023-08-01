@@ -2,11 +2,11 @@
 
 namespace App\Exceptions;
 
-use Illuminate\Database\QueryException;
+use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Http\Request;
+use Leaguefy\LeaguefyAdmin\Exceptions\LeaguefyAdminException;
 use Leaguefy\LeaguefyManager\Exceptions\LeaguefyManagerApiException;
-use Illuminate\Validation\ValidationException;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -31,30 +31,22 @@ class Handler extends ExceptionHandler
             //
         });
 
-        $this->renderable(function (ValidationException $e, $request) {
-            if ($request->is(config('leaguefy-admin.route.prefix').'/*')) {
-                session()->flash('toastr', collect([
-                    'type' => ['warning'],
-                    'message' => [$e->getMessage()],
-                ]));
-            }
-        });
-
-        $this->renderable(function (QueryException $e, $request) {
-            if ($request->is(config('leaguefy-admin.route.prefix').'/*')) {
-                session()->flash('error', collect([
-                    'title' => ['Erro na execução da ação'],
-                    'message' => ['Tente novamente ou contate o administrador!'],
-                ]));
-            }
-        });
-
         $this->renderable(function (Throwable $th, Request $request) {
+            $exception = new Exception($th);
+
+            if ($request->is(config('leaguefy-admin.route.prefix').'/*')) {
+                $exception = new LeaguefyAdminException($th);
+
+                return $exception->render($request);
+            }
+
             if ($request->is(config('leaguefy-manager.route.prefix').'/*')) {
                 $exception = new LeaguefyManagerApiException($th);
 
-                return response()->json($exception->render(), $exception->getCode());
+                return $exception->render();
             }
+
+            return $exception;
         });
     }
 }
