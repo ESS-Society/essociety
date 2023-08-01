@@ -44,4 +44,4 @@ Route::group([
     });
 });
 
-$router->post('/auth/logout', [Controllers\AuthController::class, 'logout']);
+$router->post('/auth/logout', [Controllers\AuthController::class, 'logout'])->name('auth.logout');
