@@ -1,1 +1,0 @@
-import{q as m,j as r}from"./app-f136ca8f.js";import{M as o}from"./Master-7d15f78f.js";import{G as s}from"./Grid-d9759ca4.js";import"./Card-db3b7093.js";function p(){const{props:a}=m();return r(o,{header:"Games",children:r(s,{name:"game",columns:a.columns,data:a.data})})}export{p as default};

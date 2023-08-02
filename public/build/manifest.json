@@ -3,49 +3,62 @@
     "file": "assets/Master-55fec1ff.css",
     "src": "Master.css"
   },
-  "_Card-db3b7093.js": {
-    "file": "assets/Card-db3b7093.js",
+  "_ButtonGroup-0ed66208.js": {
+    "file": "assets/ButtonGroup-0ed66208.js",
     "imports": [
-      "_Master-7d15f78f.js",
+      "_Master-62527ced.js",
       "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx"
     ]
   },
-  "_Form-c7b59712.js": {
-    "file": "assets/Form-c7b59712.js",
+  "_Card-aca53466.js": {
+    "file": "assets/Card-aca53466.js",
     "imports": [
-      "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx",
-      "_Card-db3b7093.js",
-      "_Master-7d15f78f.js"
+      "_Master-62527ced.js",
+      "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx"
     ]
   },
-  "_Grid-d9759ca4.js": {
-    "file": "assets/Grid-d9759ca4.js",
+  "_Form-d340898f.js": {
+    "file": "assets/Form-d340898f.js",
     "imports": [
       "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx",
-      "_Card-db3b7093.js",
-      "_Master-7d15f78f.js"
+      "_uc-first-b7f0971a.js",
+      "_Master-62527ced.js",
+      "_Card-aca53466.js",
+      "_ButtonGroup-0ed66208.js"
     ]
   },
-  "_Master-7d15f78f.js": {
+  "_Grid-8e70687c.js": {
+    "file": "assets/Grid-8e70687c.js",
+    "imports": [
+      "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx",
+      "_uc-first-b7f0971a.js",
+      "_Card-aca53466.js",
+      "_Master-62527ced.js"
+    ]
+  },
+  "_Master-62527ced.js": {
     "css": [
       "assets/Master-55fec1ff.css"
     ],
-    "file": "assets/Master-7d15f78f.js",
+    "file": "assets/Master-62527ced.js",
     "imports": [
       "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx"
     ]
   },
+  "_uc-first-b7f0971a.js": {
+    "file": "assets/uc-first-b7f0971a.js"
+  },
   "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Dashboard.jsx": {
-    "file": "assets/Dashboard-754ea628.js",
+    "file": "assets/Dashboard-7efc3c96.js",
     "imports": [
       "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx",
-      "_Master-7d15f78f.js"
+      "_Master-62527ced.js"
     ],
     "isDynamicEntry": true,
     "src": "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Dashboard.jsx"
   },
   "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Error.jsx": {
-    "file": "assets/Error-ecc0403d.js",
+    "file": "assets/Error-673752e1.js",
     "imports": [
       "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx"
     ],
@@ -53,70 +66,90 @@
     "src": "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Error.jsx"
   },
   "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Games/Form.jsx": {
-    "file": "assets/Form-14672dbb.js",
+    "file": "assets/Form-312c6da4.js",
     "imports": [
       "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx",
-      "_Master-7d15f78f.js",
-      "_Form-c7b59712.js",
-      "_Card-db3b7093.js"
+      "_Master-62527ced.js",
+      "_Form-d340898f.js",
+      "_uc-first-b7f0971a.js",
+      "_Card-aca53466.js",
+      "_ButtonGroup-0ed66208.js"
     ],
     "isDynamicEntry": true,
     "src": "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Games/Form.jsx"
   },
   "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Games/List.jsx": {
-    "file": "assets/List-94512330.js",
+    "file": "assets/List-ca0dd043.js",
     "imports": [
       "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx",
-      "_Master-7d15f78f.js",
-      "_Grid-d9759ca4.js",
-      "_Card-db3b7093.js"
+      "_Master-62527ced.js",
+      "_Grid-8e70687c.js",
+      "_uc-first-b7f0971a.js",
+      "_Card-aca53466.js"
     ],
     "isDynamicEntry": true,
     "src": "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Games/List.jsx"
   },
   "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Teams/Form.jsx": {
-    "file": "assets/Form-85121e9d.js",
+    "file": "assets/Form-df93cde3.js",
     "imports": [
       "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx",
-      "_Master-7d15f78f.js",
-      "_Form-c7b59712.js",
-      "_Card-db3b7093.js"
+      "_Master-62527ced.js",
+      "_Form-d340898f.js",
+      "_uc-first-b7f0971a.js",
+      "_Card-aca53466.js",
+      "_ButtonGroup-0ed66208.js"
     ],
     "isDynamicEntry": true,
     "src": "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Teams/Form.jsx"
   },
   "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Teams/List.jsx": {
-    "file": "assets/List-28221560.js",
+    "file": "assets/List-55fa80ce.js",
     "imports": [
       "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx",
-      "_Master-7d15f78f.js",
-      "_Grid-d9759ca4.js",
-      "_Card-db3b7093.js"
+      "_Master-62527ced.js",
+      "_Grid-8e70687c.js",
+      "_uc-first-b7f0971a.js",
+      "_Card-aca53466.js"
     ],
     "isDynamicEntry": true,
     "src": "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Teams/List.jsx"
   },
   "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Tournaments/Form.jsx": {
-    "file": "assets/Form-972cd4e1.js",
+    "file": "assets/Form-14181cfd.js",
     "imports": [
       "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx",
-      "_Master-7d15f78f.js",
-      "_Form-c7b59712.js",
-      "_Card-db3b7093.js"
+      "_Master-62527ced.js",
+      "_Form-d340898f.js",
+      "_uc-first-b7f0971a.js",
+      "_Card-aca53466.js",
+      "_ButtonGroup-0ed66208.js"
     ],
     "isDynamicEntry": true,
     "src": "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Tournaments/Form.jsx"
   },
   "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Tournaments/List.jsx": {
-    "file": "assets/List-7c5a7eda.js",
+    "file": "assets/List-15c5e48b.js",
     "imports": [
       "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx",
-      "_Master-7d15f78f.js",
-      "_Grid-d9759ca4.js",
-      "_Card-db3b7093.js"
+      "_Master-62527ced.js",
+      "_Grid-8e70687c.js",
+      "_uc-first-b7f0971a.js",
+      "_Card-aca53466.js"
     ],
     "isDynamicEntry": true,
     "src": "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Tournaments/List.jsx"
+  },
+  "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Tournaments/StagesFlow.jsx": {
+    "file": "assets/StagesFlow-788eeda0.js",
+    "imports": [
+      "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx",
+      "_Master-62527ced.js",
+      "_Card-aca53466.js",
+      "_ButtonGroup-0ed66208.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Tournaments/StagesFlow.jsx"
   },
   "vendor/leaguefy/leaguefy-admin/resources/js/app.css": {
     "file": "assets/app-09b303f7.css",
@@ -134,9 +167,10 @@
       "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Teams/Form.jsx",
       "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Teams/List.jsx",
       "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Tournaments/Form.jsx",
-      "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Tournaments/List.jsx"
+      "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Tournaments/List.jsx",
+      "vendor/leaguefy/leaguefy-admin/resources/js/Pages/Tournaments/StagesFlow.jsx"
     ],
-    "file": "assets/app-f136ca8f.js",
+    "file": "assets/app-3eb06faa.js",
     "isEntry": true,
     "src": "vendor/leaguefy/leaguefy-admin/resources/js/app.jsx"
   }

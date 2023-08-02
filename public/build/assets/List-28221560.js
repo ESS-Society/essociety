@@ -1,1 +1,0 @@
-import{q as t,j as r}from"./app-f136ca8f.js";import{M as m}from"./Master-7d15f78f.js";import{G as o}from"./Grid-d9759ca4.js";import"./Card-db3b7093.js";function p(){const{props:a}=t();return r(m,{header:"Teams",children:r(o,{name:"team",columns:a.columns,data:a.data})})}export{p as default};

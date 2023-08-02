@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0bbc5d6d7eac0b6a0558f57f8b276af7",
+    "content-hash": "cabd04e6f0fd4bfd9b57c6482132f8f8",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1937,23 +1937,23 @@
         },
         {
             "name": "leaguefy/leaguefy-admin",
-            "version": "v0.1.19",
+            "version": "v0.1.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrianoanschau/leaguefy-admin.git",
-                "reference": "0d68e56acbf8f1cf037f5a75f016b2d2dd4772fc"
+                "reference": "2036d8df178bf4a5cadef525ebf3a7781abd107c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrianoanschau/leaguefy-admin/zipball/0d68e56acbf8f1cf037f5a75f016b2d2dd4772fc",
-                "reference": "0d68e56acbf8f1cf037f5a75f016b2d2dd4772fc",
+                "url": "https://api.github.com/repos/adrianoanschau/leaguefy-admin/zipball/2036d8df178bf4a5cadef525ebf3a7781abd107c",
+                "reference": "2036d8df178bf4a5cadef525ebf3a7781abd107c",
                 "shasum": ""
             },
             "require": {
                 "inertiajs/inertia-laravel": "^0.6.3",
                 "jeroennoten/laravel-adminlte": ">=3.9.1",
                 "laravel/framework": ">=7.0",
-                "leaguefy/leaguefy-manager": "^0.1.9",
+                "leaguefy/leaguefy-manager": "^0.1.10",
                 "php": ">=7.2.5",
                 "tightenco/ziggy": "^1.0"
             },
@@ -1985,22 +1985,22 @@
             "description": "Leaguefy Admin - E-Sports Manager.",
             "support": {
                 "issues": "https://github.com/adrianoanschau/leaguefy-admin/issues",
-                "source": "https://github.com/adrianoanschau/leaguefy-admin/tree/v0.1.19"
+                "source": "https://github.com/adrianoanschau/leaguefy-admin/tree/v0.1.21"
             },
-            "time": "2023-08-01T12:58:59+00:00"
+            "time": "2023-08-02T16:52:27+00:00"
         },
         {
             "name": "leaguefy/leaguefy-manager",
-            "version": "v0.1.9",
+            "version": "v0.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrianoanschau/leaguefy-manager.git",
-                "reference": "72f81db5abd0209e2a39c8d370808aee603e0032"
+                "reference": "39033e22b6c4a6a310be64ed40bdad54b66d04b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrianoanschau/leaguefy-manager/zipball/72f81db5abd0209e2a39c8d370808aee603e0032",
-                "reference": "72f81db5abd0209e2a39c8d370808aee603e0032",
+                "url": "https://api.github.com/repos/adrianoanschau/leaguefy-manager/zipball/39033e22b6c4a6a310be64ed40bdad54b66d04b4",
+                "reference": "39033e22b6c4a6a310be64ed40bdad54b66d04b4",
                 "shasum": ""
             },
             "type": "library",
@@ -2031,9 +2031,9 @@
             "description": "Leaguefy Manager - E-Sports Manager.",
             "support": {
                 "issues": "https://github.com/adrianoanschau/leaguefy-manager/issues",
-                "source": "https://github.com/adrianoanschau/leaguefy-manager/tree/v0.1.9"
+                "source": "https://github.com/adrianoanschau/leaguefy-manager/tree/v0.1.10"
             },
-            "time": "2023-08-01T12:28:22+00:00"
+            "time": "2023-08-02T16:48:09+00:00"
         },
         {
             "name": "monolog/monolog",
